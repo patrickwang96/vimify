@@ -1,3 +1,19 @@
+## Update
+
+The HendrikPetertje's version doesn't work on my vim. I'm using MacVim on my laptop and Ubuntu 18.04 LTS default vim on my desktop machine. 
+The problem is that it uses py3 for the vim script. However, I use plugins like YCM that needs python2. Vim does not allow py2 and py3 to load 
+at the same time. 
+
+Therefore, I refactored the code from py3 to py2 to fit into my vim. Whoever encountered my problem can refer to this plugin.
+
+### Installation 
+The original way is to use pathogen. However, I'm using Vundle to manage my plugins. 
+So, simply add this pline to your .vimrc
+
+```
+Plugin 'patrickwang96/vimify'
+```
+
 ## About
 
 ![Vimify](https://raw.githubusercontent.com/HendrikPetertje/vimify/master/example.png)
@@ -34,12 +50,6 @@ vimify is designed to interface with a running desktop instance of Spotify. Curr
     * `<Enter>`: If the cursor is over the name of the album, Spotify will begin playback of the entire album
     * `<Space>`: Is bound to `:SpToggle` when working in the Vimify buffer
 
-## Installation
-The preferred way to install vimify is to use [pathogen](https://github.com/tpope/vim-pathogen). With pathogen installed, simply run
-```bash
-cd ~/.vim/bundle
-git clone https://github.com/MuAnsari96/vimify
-```
 ### update March 2018: Vimify now requires authentication.
 
 1. Create a new spotify application at https://beta.developer.spotify.com/dashboard/applications
@@ -62,10 +72,3 @@ to spot and more than easy to reverse!!!!).
 
 And you'll be good to go! Once help tags are generated, you can just run `:help vimify` in vim to see the manual.
 
-## Roadmap
-- Clean up the code and break things apart to their own sections / files
-- Instead of making a file that opens as an interface, 
-  push the whole thing to `:copen` (need to dig in some literature for that).
-- Make a setup interface that helps new users create a `Authorisation: Basic`
-  token without having to read this readme or visiting shady encoding sites.
-- Your ideas and wishes.
