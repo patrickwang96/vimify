@@ -16,7 +16,7 @@ Plugin 'patrickwang96/vimify'
 
 ## About
 
-![Vimify](https://raw.githubusercontent.com/HendrikPetertje/vimify/master/example.png)
+![Vimify](https://github.com/patrickwang96/vimify/blob/master/example.png)
 
 [vimify](https://github.com/Hendrikpetertje/vimify) is a plugin for [Vim](https://github.com/vim/vim) 
 origionally inspired by [MuAnsari96](https://github.com/MuAnsari96/vimify).
