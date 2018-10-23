@@ -8,7 +8,7 @@ Therefore, I refactored the code from py3 to py2 to fit into my vim. Whoever enc
 
 ### Installation 
 The original way is to use pathogen. However, I'm using Vundle to manage my plugins. 
-So, simply add this pline to your .vimrc
+So, simply add this line to your .vimrc
 
 ```
 Plugin 'patrickwang96/vimify'
